@@ -1,0 +1,33 @@
+<table class="table table-bordered">
+  <tr>
+    <th>Hra Entrada</th>
+    <th>Cajero</th>
+    <th>Garzón</th>
+    <th>Zona</th>
+    <th>Nro Mesa</th>
+    <th>Cant Almuerzos</th>
+    <th>Total Pago</th>
+    <th>Hora Salida</th>
+    <!-- <th>Forma de Pago</th> -->
+    <!-- <th>Productos</th> -->
+  </tr>
+  <tr *ngFor="let ventas of listVentas">
+    <td>{{ventas.date_opened}}</td>
+    <td>{{ventas.cashier}}</td>
+    <td>{{ventas.waiter}}</td>
+    <td>{{ventas.zone}}</td>
+    <td>{{ventas.table}}</td>
+    <td>{{ventas.diners}}</td>
+    <td>{{ventas.total}}</td>
+    <td>{{ventas.date_closed}}</td>
+    <!-- <td *ngFor = "let form of listPayments">
+      {{form.type}}
+    </td> -->
+    
+    <!-- <td *ngFor="let prods of listProductos">
+      <ul>Nombre: {{prods.name}} </ul>
+      <ul>Categoria: {{prods.category}} </ul>
+      <ul>Precio: {{prods.price}} </ul>
+      <ul>Cantidad: {{prods.quantity}} </ul>
+    </td> -->
+</table>
